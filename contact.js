@@ -12,3 +12,11 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+const menu= document.querySelector('#mobile-menu')
+const menuLinks = document.querySelector('.navbar__menu')
+
+menu.addEventListener('click',function(){
+menu.classList.toggle('is-active');
+menuLinks.classList.toggle('active');
+})
